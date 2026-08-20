@@ -1,0 +1,25 @@
+{
+  "retrieved_at": "2026-08-20T11:00:48.200Z",
+  "language": "ja",
+  "official_source_url": "https://shadowverse-wb.com/ja/deck/cardslist/",
+  "official_api_url": "https://shadowverse-wb.com/web/CardList/cardList",
+  "card_count": 735,
+  "unique_card_id_count": 735,
+  "collection_method": "The official card-list JavaScript calls GET /web/CardList/cardList. This collector follows that endpoint in 30-card pages using offset, preserves sort_card_id_list order, and selects only those listed IDs from card_details.",
+  "scope": "Cards returned by the Japanese official card library's default search. Related/generated token details bundled by the API are not added unless their IDs occur in sort_card_id_list.",
+  "schema": {
+    "card_id": "integer; official unique card ID",
+    "カード名": "string",
+    "クラス": "string",
+    "コスト": "integer",
+    "種類": "フォロワー | スペル | アミュレット",
+    "攻撃": "integer for followers; null otherwise",
+    "体力": "integer for followers; null otherwise",
+    "効果": "string; official markup converted to plain text",
+    "進化後効果": "string for followers, possibly empty; null otherwise",
+    "card_set": "string; Japanese official set name",
+    "card_set_id": "integer",
+    "rarity": "ブロンズレア | シルバーレア | ゴールドレア | レジェンド",
+    "rarity_id": "integer"
+  }
+}
