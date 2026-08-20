@@ -1,10 +1,12 @@
 {
-  "retrieved_at": "2026-08-20T11:00:48.200Z",
+  "retrieved_at": "2026-08-20T11:36:59.825Z",
   "language": "ja",
   "official_source_url": "https://shadowverse-wb.com/ja/deck/cardslist/",
   "official_api_url": "https://shadowverse-wb.com/web/CardList/cardList",
   "card_count": 735,
   "unique_card_id_count": 735,
+  "cards_with_styles": 90,
+  "card_style_count": 121,
   "collection_method": "The official card-list JavaScript calls GET /web/CardList/cardList. This collector follows that endpoint in 30-card pages using offset, preserves sort_card_id_list order, and selects only those listed IDs from card_details.",
   "scope": "Cards returned by the Japanese official card library's default search. Related/generated token details bundled by the API are not added unless their IDs occur in sort_card_id_list.",
   "schema": {
@@ -20,6 +22,16 @@
     "card_set": "string; Japanese official set name",
     "card_set_id": "integer",
     "rarity": "ブロンズレア | シルバーレア | ゴールドレア | レジェンド",
-    "rarity_id": "integer"
+    "rarity_id": "integer",
+    "card_styles": "array; alternate visual styles associated with this base card",
+    "card_styles[].style_index": "integer; one-based order in the official API style_card_list",
+    "card_styles[].style_name": "string; alternate style name, empty when the official API does not provide one",
+    "card_styles[].image_hash": "string; official normal-state image hash",
+    "card_styles[].image_url": "string; official normal-state image URL",
+    "card_styles[].evolved_image_hash": "string or null; official evolved image hash",
+    "card_styles[].evolved_image_url": "string or null; official evolved image URL",
+    "card_styles[].effect_override": "string or null; style-specific effect text when supplied",
+    "card_styles[].effective_effect": "string; style override or inherited base-card effect",
+    "card_styles[].uses_base_effect": "boolean"
   }
 }

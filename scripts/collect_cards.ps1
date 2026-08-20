@@ -5,6 +5,7 @@ param(
 $ErrorActionPreference = "Stop"
 $SourcePage = "https://shadowverse-wb.com/ja/deck/cardslist/"
 $ApiUrl = "https://shadowverse-wb.com/web/CardList/cardList"
+$CardImageBaseUrl = "https://shadowverse-wb.com/uploads/card_image/jpn/card"
 $PageSize = 30
 $Headers = @{ Accept = "application/json"; Lang = "ja" }
 
@@ -63,6 +64,32 @@ for ($offset = 0; $offset -lt $expectedCount; $offset += $PageSize) {
         $evoEffect = if ($isFollower -and $null -ne $detail.evo) {
             ConvertTo-PlainText $detail.evo.skill_text
         } elseif ($isFollower) { "" } else { $null }
+        $baseEffect = ConvertTo-PlainText $common.skill_text
+        $cardStyles = [System.Collections.Generic.List[object]]::new()
+        $styleIndex = 0
+        foreach ($style in @($detail.style_card_list)) {
+            if ($null -eq $style) { continue }
+            $styleIndex++
+            $styleEffectOverride = ConvertTo-PlainText $style.skill_text
+            $imageHash = [string]$style.hash
+            $evolvedImageHash = [string]$style.evo_hash
+            $cardStyles.Add([ordered]@{
+                style_index = $styleIndex
+                style_name = ConvertTo-PlainText $style.name
+                style_name_ruby = ConvertTo-PlainText $style.name_ruby
+                image_hash = $imageHash
+                image_url = if ($imageHash) { "$CardImageBaseUrl/$imageHash.png" } else { $null }
+                evolved_image_hash = if ($evolvedImageHash) { $evolvedImageHash } else { $null }
+                evolved_image_url = if ($evolvedImageHash) { "$CardImageBaseUrl/$evolvedImageHash.png" } else { $null }
+                effect_override = if ($styleEffectOverride) { $styleEffectOverride } else { $null }
+                effective_effect = if ($styleEffectOverride) { $styleEffectOverride } else { $baseEffect }
+                uses_base_effect = -not [bool]$styleEffectOverride
+                flavour_text = ConvertTo-PlainText $style.flavour_text
+                evolved_flavour_text = ConvertTo-PlainText $style.evo_flavour_text
+                cv = [string]$style.cv
+                illustrator = [string]$style.illustrator
+            })
+        }
         $cards.Add([ordered]@{
             card_id = $cardId
             "カード名" = ConvertTo-PlainText $common.name
@@ -71,12 +98,13 @@ for ($offset = 0; $offset -lt $expectedCount; $offset += $PageSize) {
             "種類" = $TypeNames[[string]$typeId]
             "攻撃" = if ($isFollower) { [int]$common.atk } else { $null }
             "体力" = if ($isFollower) { [int]$common.life } else { $null }
-            "効果" = ConvertTo-PlainText $common.skill_text
+            "効果" = $baseEffect
             "進化後効果" = $evoEffect
             card_set = $cardSets.PSObject.Properties[[string]$common.card_set_id].Value
             card_set_id = [int]$common.card_set_id
             rarity = $RarityNames[[string]$common.rarity]
             rarity_id = [int]$common.rarity
+            card_styles = $cardStyles
         })
     }
 }
@@ -92,6 +120,8 @@ $metadata = [ordered]@{
     official_api_url = $ApiUrl
     card_count = $cards.Count
     unique_card_id_count = $seen.Count
+    cards_with_styles = ($cards | Where-Object { $_.card_styles.Count -gt 0 }).Count
+    card_style_count = [int](($cards | ForEach-Object { $_.card_styles.Count } | Measure-Object -Sum).Sum)
     collection_method = "The official card-list JavaScript calls GET /web/CardList/cardList. This collector follows that endpoint in 30-card pages using offset, preserves sort_card_id_list order, and selects only those listed IDs from card_details."
     scope = "Cards returned by the Japanese official card library's default search. Related/generated token details bundled by the API are not added unless their IDs occur in sort_card_id_list."
     schema = [ordered]@{
@@ -108,6 +138,16 @@ $metadata = [ordered]@{
         card_set_id = "integer"
         rarity = "ブロンズレア | シルバーレア | ゴールドレア | レジェンド"
         rarity_id = "integer"
+        card_styles = "array; alternate visual styles associated with this base card"
+        "card_styles[].style_index" = "integer; one-based order in the official API style_card_list"
+        "card_styles[].style_name" = "string; alternate style name, empty when the official API does not provide one"
+        "card_styles[].image_hash" = "string; official normal-state image hash"
+        "card_styles[].image_url" = "string; official normal-state image URL"
+        "card_styles[].evolved_image_hash" = "string or null; official evolved image hash"
+        "card_styles[].evolved_image_url" = "string or null; official evolved image URL"
+        "card_styles[].effect_override" = "string or null; style-specific effect text when supplied"
+        "card_styles[].effective_effect" = "string; style override or inherited base-card effect"
+        "card_styles[].uses_base_effect" = "boolean"
     }
 }
 
