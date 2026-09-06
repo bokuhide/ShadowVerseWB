@@ -1,5 +1,6 @@
 param(
-    [string]$OutputDirectory = "data"
+    [string]$OutputDirectory = "data",
+    [string]$NodeExecutable = ""
 )
 
 $ErrorActionPreference = "Stop"
@@ -23,6 +24,11 @@ function Get-OfficialPage([int]$Offset) {
     $uri = "$ApiUrl`?offset=$Offset"
     for ($attempt = 0; $attempt -lt 4; $attempt++) {
         try {
+            if ($NodeExecutable) {
+                $json = & $NodeExecutable -e 'fetch(process.argv[1],{headers:{Accept:"application/json",Lang:"ja"},signal:AbortSignal.timeout(90000)}).then(async r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);process.stdout.write(await r.text())}).catch(e=>{console.error(e.message);process.exit(1)})' $uri
+                if ($LASTEXITCODE -ne 0) { throw "Node API request failed at offset=$Offset" }
+                return ($json | ConvertFrom-Json)
+            }
             return Invoke-RestMethod -UseBasicParsing -Headers $Headers -Uri $uri -TimeoutSec 90
         } catch {
             if ($attempt -eq 3) { throw }
@@ -104,7 +110,13 @@ for ($offset = 0; $offset -lt $expectedCount; $offset += $PageSize) {
             card_set_id = [int]$common.card_set_id
             rarity = $RarityNames[[string]$common.rarity]
             rarity_id = [int]$common.rarity
-            card_styles = $cardStyles
+            image_hash = [string]$common.card_image_hash
+            image_url = if ($common.card_image_hash) { "$CardImageBaseUrl/$($common.card_image_hash).png" } else { $null }
+            evolved_image_hash = if ($detail.evo.card_image_hash) { [string]$detail.evo.card_image_hash } else { $null }
+            evolved_image_url = if ($detail.evo.card_image_hash) { "$CardImageBaseUrl/$($detail.evo.card_image_hash).png" } else { $null }
+            # Materialize the generic list so ConvertTo-Json always emits an array,
+            # including when a card has exactly one style.
+            card_styles = $cardStyles.ToArray()
         })
     }
 }
@@ -138,6 +150,10 @@ $metadata = [ordered]@{
         card_set_id = "integer"
         rarity = "ブロンズレア | シルバーレア | ゴールドレア | レジェンド"
         rarity_id = "integer"
+        image_hash = "string; official base-card image hash"
+        image_url = "string or null; official base-card image URL"
+        evolved_image_hash = "string or null; official evolved base-card image hash"
+        evolved_image_url = "string or null; official evolved base-card image URL"
         card_styles = "array; alternate visual styles associated with this base card"
         "card_styles[].style_index" = "integer; one-based order in the official API style_card_list"
         "card_styles[].style_name" = "string; alternate style name, empty when the official API does not provide one"

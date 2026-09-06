@@ -1,0 +1,29 @@
+{
+  "retrieved_at": "2026-09-06T11:08:34.739Z",
+  "cards": 811,
+  "styles": 131,
+  "unnamed_styles": 96,
+  "evolved_base_images": 586,
+  "added": 0,
+  "removed": 0,
+  "changed": [],
+  "images_checked": 1637,
+  "failed_images": [],
+  "errors": [],
+  "reference_links": [
+    {
+      "name": "万食のアナテマ・ララアンセム",
+      "styles": [
+        "ネオンスプラッシュ・ララアンセム",
+        "ネオンスプラッシュ・ララアンセム"
+      ]
+    },
+    {
+      "name": "災いの言霊・ジンジャー",
+      "styles": [
+        "求道の魔術師・イザベル",
+        "水面の言霊・ジンジャー"
+      ]
+    }
+  ]
+}
