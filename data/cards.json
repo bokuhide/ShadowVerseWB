@@ -1373,6 +1373,43 @@
     "card_styles": []
   },
   {
+    "card_id": 10974110,
+    "カード名": "束刃の咎人・カットスロート",
+    "クラス": "ネメシス",
+    "コスト": 1,
+    "種類": "フォロワー",
+    "攻撃": 1,
+    "体力": 1,
+    "効果": "【必殺】\n\n【進化時】自分のデッキから【必殺】を持つネメシス・フォロワー1枚を引く。その後、自分のデッキに重複するカードがないなら、自分は『クレスト：束刃の咎人・カットスロート』を持つ。",
+    "進化後効果": "【必殺】\n\n【進化時】自分のデッキから【必殺】を持つネメシス・フォロワー1枚を引く。その後、自分のデッキに重複するカードがないなら、自分は『クレスト：束刃の咎人・カットスロート』を持つ。",
+    "card_set": "アズヴォルト・レヴナント",
+    "card_set_id": 10009,
+    "rarity": "レジェンド",
+    "rarity_id": 4,
+    "image_hash": "959771085bbb41f988eda4f417c3c4ab",
+    "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/959771085bbb41f988eda4f417c3c4ab.png",
+    "evolved_image_hash": "85bbf910abe742618a54da94c863dea2",
+    "evolved_image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/85bbf910abe742618a54da94c863dea2.png",
+    "card_styles": [
+      {
+        "style_index": 1,
+        "style_name": "",
+        "style_name_ruby": "",
+        "image_hash": "6eb96958fc654f7e8e165603c9ce76b0",
+        "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/6eb96958fc654f7e8e165603c9ce76b0.png",
+        "evolved_image_hash": "d52d53a14a1642ecae7ec4ec631a5212",
+        "evolved_image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/d52d53a14a1642ecae7ec4ec631a5212.png",
+        "effect_override": null,
+        "effective_effect": "【必殺】\n\n【進化時】自分のデッキから【必殺】を持つネメシス・フォロワー1枚を引く。その後、自分のデッキに重複するカードがないなら、自分は『クレスト：束刃の咎人・カットスロート』を持つ。",
+        "uses_base_effect": true,
+        "flavour_text": "「結局カッティスのほうが速いからなー。全部任せるよ」\n「お前のことだ。俺にも読めぬ完璧な策があるんだろう」\n「貴方ならどんな窮地だって切り開ける。信頼してるわ」\n「炯然たる才、群がる屑鉄――ま、好きにすりゃいいさ」",
+        "evolved_flavour_text": "レネゲイド。圧政を砕かんと、刃に集った者たちの名。\n彼らが手にするのは、支配者なき奔放の社会か。\n――あるいは、衆愚混じらぬ兄弟との再会か。\n屑鉄は刃の本意を知らず。刃は肉親の厭悪を知らない。",
+        "cv": "",
+        "illustrator": "ヤナガワ"
+      }
+    ]
+  },
+  {
     "card_id": 10171320,
     "カード名": "アーティファクトチャージ",
     "クラス": "ネメシス",
@@ -1517,7 +1554,7 @@
     "種類": "スペル",
     "攻撃": null,
     "体力": null,
-    "効果": "自分の手札1枚を選ぶ。それを捨てる。自分のデッキから1枚を引く。自分のデッキに重複するカードがないなら、1枚を引くのではなく3枚を引く。",
+    "効果": "自分の手札1枚を選ぶ。それを捨てる。自分のデッキから【必殺】を持つネメシス・フォロワー1枚を引く。その後、自分のデッキに重複するカードがないなら、自分のデッキから2枚を引く。",
     "進化後効果": null,
     "card_set": "アズヴォルト・レヴナント",
     "card_set_id": 10009,
@@ -2864,17 +2901,17 @@
     "コスト": 2,
     "種類": "フォロワー",
     "攻撃": 2,
-    "体力": 1,
+    "体力": 2,
     "効果": "【ファンファーレ】『戦慄の海賊旗』1枚を自分の場に出す。\n\n【進化時】『黄金の靴』1枚を自分の手札に加える。",
     "進化後効果": "【ファンファーレ】『戦慄の海賊旗』1枚を自分の場に出す。\n\n【進化時】『黄金の靴』1枚を自分の手札に加える。",
     "card_set": "アズヴォルト・レヴナント",
     "card_set_id": 10009,
     "rarity": "ブロンズレア",
     "rarity_id": 1,
-    "image_hash": "98cee2bf79554c98bdc4d3eca7e0202e",
-    "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/98cee2bf79554c98bdc4d3eca7e0202e.png",
-    "evolved_image_hash": "94d3ad052be8411a89c2a2e5a7371c73",
-    "evolved_image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/94d3ad052be8411a89c2a2e5a7371c73.png",
+    "image_hash": "9edd3df5c84e457982b1378722f6f2c3",
+    "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/9edd3df5c84e457982b1378722f6f2c3.png",
+    "evolved_image_hash": "618c6c7b49db43c390405870713c344a",
+    "evolved_image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/618c6c7b49db43c390405870713c344a.png",
     "card_styles": []
   },
   {
@@ -5410,43 +5447,6 @@
     ]
   },
   {
-    "card_id": 10974110,
-    "カード名": "束刃の咎人・カットスロート",
-    "クラス": "ネメシス",
-    "コスト": 2,
-    "種類": "フォロワー",
-    "攻撃": 2,
-    "体力": 2,
-    "効果": "【必殺】\n\n【進化時】自分のデッキの『束刃の咎人・カットスロート』すべてを消滅。その後、自分のデッキに重複するカードがないなら、自分は『クレスト：束刃の咎人・カットスロート』を持つ。",
-    "進化後効果": "【必殺】\n\n【進化時】自分のデッキの『束刃の咎人・カットスロート』すべてを消滅。その後、自分のデッキに重複するカードがないなら、自分は『クレスト：束刃の咎人・カットスロート』を持つ。",
-    "card_set": "アズヴォルト・レヴナント",
-    "card_set_id": 10009,
-    "rarity": "レジェンド",
-    "rarity_id": 4,
-    "image_hash": "47187a960a584ca2be96d00c2d77c401",
-    "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/47187a960a584ca2be96d00c2d77c401.png",
-    "evolved_image_hash": "e1a0351e2d4f40f9adc46bdb02c2428d",
-    "evolved_image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/e1a0351e2d4f40f9adc46bdb02c2428d.png",
-    "card_styles": [
-      {
-        "style_index": 1,
-        "style_name": "",
-        "style_name_ruby": "",
-        "image_hash": "dadf6f5f5b7e46d58eb602d78a53f549",
-        "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/dadf6f5f5b7e46d58eb602d78a53f549.png",
-        "evolved_image_hash": "2c4b9efd97a844e6918b25b7297b3b26",
-        "evolved_image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/2c4b9efd97a844e6918b25b7297b3b26.png",
-        "effect_override": null,
-        "effective_effect": "【必殺】\n\n【進化時】自分のデッキの『束刃の咎人・カットスロート』すべてを消滅。その後、自分のデッキに重複するカードがないなら、自分は『クレスト：束刃の咎人・カットスロート』を持つ。",
-        "uses_base_effect": true,
-        "flavour_text": "「結局カッティスのほうが速いからなー。全部任せるよ」\n「お前のことだ。俺にも読めぬ完璧な策があるんだろう」\n「貴方ならどんな窮地だって切り開ける。信頼してるわ」\n「炯然たる才、群がる屑鉄――ま、好きにすりゃいいさ」",
-        "evolved_flavour_text": "レネゲイド。圧政を砕かんと、刃に集った者たちの名。\n彼らが手にするのは、支配者なき奔放の社会か。\n――あるいは、衆愚混じらぬ兄弟との再会か。\n屑鉄は刃の本意を知らず。刃は肉親の厭悪を知らない。",
-        "cv": "",
-        "illustrator": "ヤナガワ"
-      }
-    ]
-  },
-  {
     "card_id": 10172310,
     "カード名": "命の奔流",
     "クラス": "ネメシス",
@@ -6760,18 +6760,18 @@
     "クラス": "ロイヤル",
     "コスト": 3,
     "種類": "フォロワー",
-    "攻撃": 3,
-    "体力": 1,
+    "攻撃": 4,
+    "体力": 2,
     "効果": "【ファンファーレ】『戦慄の海賊旗』1枚を自分の場に出す。『黄金の杯』1枚を自分の手札に加える。\n\n【突進】",
     "進化後効果": "【ファンファーレ】『戦慄の海賊旗』1枚を自分の場に出す。『黄金の杯』1枚を自分の手札に加える。\n\n【突進】",
     "card_set": "アズヴォルト・レヴナント",
     "card_set_id": 10009,
     "rarity": "シルバーレア",
     "rarity_id": 2,
-    "image_hash": "ad22724b80fe485fb984efef15eb76b2",
-    "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/ad22724b80fe485fb984efef15eb76b2.png",
-    "evolved_image_hash": "05526099a1574447891c8ff82e470600",
-    "evolved_image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/05526099a1574447891c8ff82e470600.png",
+    "image_hash": "61447035e39f470d9f795eca643fcaf3",
+    "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/61447035e39f470d9f795eca643fcaf3.png",
+    "evolved_image_hash": "7a76f1dfbe3d427cb0a467469bf9ec8e",
+    "evolved_image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/7a76f1dfbe3d427cb0a467469bf9ec8e.png",
     "card_styles": []
   },
   {
@@ -7253,26 +7253,6 @@
     "rarity_id": 2,
     "image_hash": "4a763744f29e425bbe8974b1f452b939",
     "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/4a763744f29e425bbe8974b1f452b939.png",
-    "evolved_image_hash": null,
-    "evolved_image_url": null,
-    "card_styles": []
-  },
-  {
-    "card_id": 10633310,
-    "カード名": "魔恋の天晶",
-    "クラス": "ウィッチ",
-    "コスト": 3,
-    "種類": "スペル",
-    "攻撃": null,
-    "体力": null,
-    "効果": "【モード】1つを選んでその能力が働く。\n（1）『天晶の魔手』1枚を自分の場に出す。それは+1/+0して【疾走】を持つ。\n（2）『天晶の魔手』2枚を自分の場に出す。それは+1/+0する。\n【エンハンス_5】1つを選ぶのではなくすべて。",
-    "進化後効果": null,
-    "card_set": "アポカリプス・パクト",
-    "card_set_id": 10006,
-    "rarity": "ゴールドレア",
-    "rarity_id": 3,
-    "image_hash": "bf34a5188d7d46adbb08de8715a783c0",
-    "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/bf34a5188d7d46adbb08de8715a783c0.png",
     "evolved_image_hash": null,
     "evolved_image_url": null,
     "card_styles": []
@@ -8708,6 +8688,26 @@
     "card_styles": []
   },
   {
+    "card_id": 10973310,
+    "カード名": "ハクガ燐斂",
+    "クラス": "ネメシス",
+    "コスト": 3,
+    "種類": "スペル",
+    "攻撃": null,
+    "体力": null,
+    "効果": "相手の場のフォロワー1枚を選ぶ。それを破壊。自分のデッキに重複するカードがないなら、1枚を選ぶのではなくすべて。",
+    "進化後効果": null,
+    "card_set": "アズヴォルト・レヴナント",
+    "card_set_id": 10009,
+    "rarity": "ゴールドレア",
+    "rarity_id": 3,
+    "image_hash": "8aaab976f01540f09ad84057100d23ef",
+    "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/8aaab976f01540f09ad84057100d23ef.png",
+    "evolved_image_hash": null,
+    "evolved_image_url": null,
+    "card_styles": []
+  },
+  {
     "card_id": 10001130,
     "カード名": "激震のゴリアテ",
     "クラス": "ニュートラル",
@@ -9886,6 +9886,26 @@
     "rarity_id": 2,
     "image_hash": "79462b18e7344eeabf3dbe3cf547f860",
     "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/79462b18e7344eeabf3dbe3cf547f860.png",
+    "evolved_image_hash": null,
+    "evolved_image_url": null,
+    "card_styles": []
+  },
+  {
+    "card_id": 10633310,
+    "カード名": "魔恋の天晶",
+    "クラス": "ウィッチ",
+    "コスト": 4,
+    "種類": "スペル",
+    "攻撃": null,
+    "体力": null,
+    "効果": "【モード】1つを選んでその能力が働く。\n（1）『天晶の魔手』1枚を自分の場に出す。それは+1/+0して【疾走】を持つ。\n（2）『天晶の魔手』2枚を自分の場に出す。それは+1/+0する。\n【エンハンス_6】1つを選ぶのではなくすべて。",
+    "進化後効果": null,
+    "card_set": "アポカリプス・パクト",
+    "card_set_id": 10006,
+    "rarity": "ゴールドレア",
+    "rarity_id": 3,
+    "image_hash": "14a3d9c49c2d4e6caeb836ef6d89815d",
+    "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/14a3d9c49c2d4e6caeb836ef6d89815d.png",
     "evolved_image_hash": null,
     "evolved_image_url": null,
     "card_styles": []
@@ -11107,26 +11127,6 @@
     "rarity_id": 1,
     "image_hash": "1c8dc41e287a46258dad41afb8991f2f",
     "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/1c8dc41e287a46258dad41afb8991f2f.png",
-    "evolved_image_hash": null,
-    "evolved_image_url": null,
-    "card_styles": []
-  },
-  {
-    "card_id": 10973310,
-    "カード名": "ハクガ燐斂",
-    "クラス": "ネメシス",
-    "コスト": 4,
-    "種類": "スペル",
-    "攻撃": null,
-    "体力": null,
-    "効果": "相手の場のフォロワー1枚を選ぶ。それを破壊。自分のデッキに重複するカードがないなら、1枚を選ぶのではなくすべて。",
-    "進化後効果": null,
-    "card_set": "アズヴォルト・レヴナント",
-    "card_set_id": 10009,
-    "rarity": "ゴールドレア",
-    "rarity_id": 3,
-    "image_hash": "0b847687b7814ad5bec1aeed4041466a",
-    "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/0b847687b7814ad5bec1aeed4041466a.png",
     "evolved_image_hash": null,
     "evolved_image_url": null,
     "card_styles": []
@@ -13629,6 +13629,43 @@
     "card_styles": []
   },
   {
+    "card_id": 10423110,
+    "カード名": "真王の刃・黄金の騎士",
+    "クラス": "ロイヤル",
+    "コスト": 6,
+    "種類": "フォロワー",
+    "攻撃": 6,
+    "体力": 6,
+    "効果": "【ファンファーレ】【モード】1つを選んでその能力が働く。\n（1）これは超進化する。\n（2）相手の場のフォロワーすべてに4ダメージ。\n（3）自分のリーダーを4回復。\n【エンハンス_8】1つを選ぶのではなくすべて。",
+    "進化後効果": "【ファンファーレ】【モード】1つを選んでその能力が働く。\n（1）これは超進化する。\n（2）相手の場のフォロワーすべてに4ダメージ。\n（3）自分のリーダーを4回復。\n【エンハンス_8】1つを選ぶのではなくすべて。",
+    "card_set": "蒼空の六竜",
+    "card_set_id": 10004,
+    "rarity": "ゴールドレア",
+    "rarity_id": 3,
+    "image_hash": "ab58a84df3da448c977751303b45df56",
+    "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/ab58a84df3da448c977751303b45df56.png",
+    "evolved_image_hash": "6e551504a6d0464284c064bd045d4616",
+    "evolved_image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/6e551504a6d0464284c064bd045d4616.png",
+    "card_styles": [
+      {
+        "style_index": 1,
+        "style_name": "",
+        "style_name_ruby": "",
+        "image_hash": "07e4724b7b844aa2877c87373632ae00",
+        "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/07e4724b7b844aa2877c87373632ae00.png",
+        "evolved_image_hash": "fd344b51292148bb89217cf7fc43bb5b",
+        "evolved_image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/fd344b51292148bb89217cf7fc43bb5b.png",
+        "effect_override": null,
+        "effective_effect": "【ファンファーレ】【モード】1つを選んでその能力が働く。\n（1）これは超進化する。\n（2）相手の場のフォロワーすべてに4ダメージ。\n（3）自分のリーダーを4回復。\n【エンハンス_8】1つを選ぶのではなくすべて。",
+        "uses_base_effect": true,
+        "flavour_text": "新たな王のそばに立つ以上、\n多少は飾り立てるのがいいだろう？\nふ……そう驚くな。鎧を脱いで、服を着替えただけだ。\n鎧兜を脱いだところで、剣の切れ味は変わらん。",
+        "evolved_flavour_text": "当然のように、私を思いやってくれる家族。\n……そうか。私はそれが嬉しかったのか。\nだから私は妻でなくとも、伴侶、家族として。\n彼らの力でありたいんだ。",
+        "cv": "",
+        "illustrator": ""
+      }
+    ]
+  },
+  {
     "card_id": 10521110,
     "カード名": "喜捨の名士",
     "クラス": "ロイヤル",
@@ -14573,7 +14610,24 @@
     "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/39be041082754260aafd922a07db518c.png",
     "evolved_image_hash": "79237fecf2d54aac8e806da1ff4eda40",
     "evolved_image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/79237fecf2d54aac8e806da1ff4eda40.png",
-    "card_styles": []
+    "card_styles": [
+      {
+        "style_index": 1,
+        "style_name": "",
+        "style_name_ruby": "",
+        "image_hash": "51826b4c613b4dfe8648f913086c828e",
+        "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/51826b4c613b4dfe8648f913086c828e.png",
+        "evolved_image_hash": "c063a1236bef4ed483f1b95fb5a756c6",
+        "evolved_image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/c063a1236bef4ed483f1b95fb5a756c6.png",
+        "effect_override": null,
+        "effective_effect": "【ファンファーレ】相手の場のフォロワー1枚を選ぶ。それを破壊。\n\n【進化時】自分は『クレスト：神紋の咎人・エルラーデ』を持つ。",
+        "uses_base_effect": true,
+        "flavour_text": "友との再会が呼び覚ますは、咎人の幼き日の記憶。\n数日で暗黒街の覇者たる一族の人間と打ち解けながら、\n「僕が君の、唯一の翼になるよ」と微笑む友に――\n一瞬、ざわついた心。それが始まりだった。",
+        "evolved_flavour_text": "初めて、「信じたい」と思えた相手だった。\nいつか翼たる彼と共に、闇の底から羽撃くことを願って。\n……しかし願えば願うほど、醜悪な情念に呑まれた――\n約定の枷に囚われた咎人の、それが罪の始まりだった。",
+        "cv": "",
+        "illustrator": "ヤナガワ"
+      }
+    ]
   },
   {
     "card_id": 10964120,
@@ -14653,7 +14707,24 @@
     "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/bb47ab89f1cd48adb92dfa69c68028e8.png",
     "evolved_image_hash": null,
     "evolved_image_url": null,
-    "card_styles": []
+    "card_styles": [
+      {
+        "style_index": 1,
+        "style_name": "",
+        "style_name_ruby": "",
+        "image_hash": "be368c9ca6b94b72890586ffac75c013",
+        "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/be368c9ca6b94b72890586ffac75c013.png",
+        "evolved_image_hash": null,
+        "evolved_image_url": null,
+        "effect_override": null,
+        "effective_effect": "【ファンファーレ】場のフォロワーすべてを破壊。\n\nコスト1【アクト】これを破壊。自分のデッキから1枚を引く。自分のリーダーを1回復。",
+        "uses_base_effect": true,
+        "flavour_text": "「全て破り去る。煩わしい枷も、価値のない約束も。\n俺の翼――俺の唯一だった、お前自身も……！」\n「なら、僕だけでも果たす。何より大切な約束通りに。\n預かった君の人生――最期は僕が与えよう！」",
+        "evolved_flavour_text": "",
+        "cv": "",
+        "illustrator": "黒蜜 きなこ"
+      }
+    ]
   },
   {
     "card_id": 10071130,
@@ -15265,43 +15336,6 @@
     "evolved_image_hash": "e52762ba15214ada81e84516cd403ee9",
     "evolved_image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/e52762ba15214ada81e84516cd403ee9.png",
     "card_styles": []
-  },
-  {
-    "card_id": 10423110,
-    "カード名": "真王の刃・黄金の騎士",
-    "クラス": "ロイヤル",
-    "コスト": 7,
-    "種類": "フォロワー",
-    "攻撃": 6,
-    "体力": 6,
-    "効果": "【ファンファーレ】【モード】1つを選んでその能力が働く。\n（1）これは超進化する。\n（2）相手の場のフォロワーすべてに4ダメージ。\n（3）自分のリーダーを4回復。\n【エンハンス_9】1つを選ぶのではなくすべて。",
-    "進化後効果": "【ファンファーレ】【モード】1つを選んでその能力が働く。\n（1）これは超進化する。\n（2）相手の場のフォロワーすべてに4ダメージ。\n（3）自分のリーダーを4回復。\n【エンハンス_9】1つを選ぶのではなくすべて。",
-    "card_set": "蒼空の六竜",
-    "card_set_id": 10004,
-    "rarity": "ゴールドレア",
-    "rarity_id": 3,
-    "image_hash": "8d1c43f0972140bda3c3becd730eb41e",
-    "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/8d1c43f0972140bda3c3becd730eb41e.png",
-    "evolved_image_hash": "c6474f3b31634a6f859e4d19503842d3",
-    "evolved_image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/c6474f3b31634a6f859e4d19503842d3.png",
-    "card_styles": [
-      {
-        "style_index": 1,
-        "style_name": "",
-        "style_name_ruby": "",
-        "image_hash": "42fa37cb18cb4add9f20509fa86f4b5c",
-        "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/42fa37cb18cb4add9f20509fa86f4b5c.png",
-        "evolved_image_hash": "5af851ccfd784c9da42acd6f8c1765fc",
-        "evolved_image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/5af851ccfd784c9da42acd6f8c1765fc.png",
-        "effect_override": null,
-        "effective_effect": "【ファンファーレ】【モード】1つを選んでその能力が働く。\n（1）これは超進化する。\n（2）相手の場のフォロワーすべてに4ダメージ。\n（3）自分のリーダーを4回復。\n【エンハンス_9】1つを選ぶのではなくすべて。",
-        "uses_base_effect": true,
-        "flavour_text": "新たな王のそばに立つ以上、\n多少は飾り立てるのがいいだろう？\nふ……そう驚くな。鎧を脱いで、服を着替えただけだ。\n鎧兜を脱いだところで、剣の切れ味は変わらん。",
-        "evolved_flavour_text": "当然のように、私を思いやってくれる家族。\n……そうか。私はそれが嬉しかったのか。\nだから私は妻でなくとも、伴侶、家族として。\n彼らの力でありたいんだ。",
-        "cv": "",
-        "illustrator": ""
-      }
-    ]
   },
   {
     "card_id": 10522120,
@@ -15924,7 +15958,24 @@
     "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/4bab86176f7045168d4d2cc100fd9902.png",
     "evolved_image_hash": "73b4e320ce0449e280b3d0a81eace29c",
     "evolved_image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/73b4e320ce0449e280b3d0a81eace29c.png",
-    "card_styles": []
+    "card_styles": [
+      {
+        "style_index": 1,
+        "style_name": "穿孔の追憶・アンテマリア",
+        "style_name_ruby": "穿孔の追憶・アンテマリア",
+        "image_hash": "50aa34e343c140aab9d4a0e403c917f4",
+        "image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/50aa34e343c140aab9d4a0e403c917f4.png",
+        "evolved_image_hash": "ae2360171a2b4d34855cee0b4514aa93",
+        "evolved_image_url": "https://shadowverse-wb.com/uploads/card_image/jpn/card/ae2360171a2b4d34855cee0b4514aa93.png",
+        "effect_override": null,
+        "effective_effect": "【ファンファーレ】直前の自分のターンに自分のフォロワーがリーダーを攻撃していたなら、これは【疾走】を持つ。\n\n【突進】\n【守護】を無視して攻撃できる。",
+        "uses_base_effect": true,
+        "flavour_text": "一人でいいと思ってた。奪った全部、手に入るし。\nでも、足りなかった。満たされなくて、眠れなかった。\nだから、アイツといると不思議なんだ。\n獲物を分け合ってるのに、なんで足りてるんだろう？",
+        "evolved_flavour_text": "奪うのに失敗した時も、苦しいどころか嬉しかった。\nワタシが欠けた分だけ、アイツが何とかしてくれるから。\nそっか。ワタシに足りないの、アイツだけだったんだ。\nなぁんだ、と思った。安心して、ワタシは眠った。",
+        "cv": "",
+        "illustrator": ""
+      }
+    ]
   },
   {
     "card_id": 10944120,

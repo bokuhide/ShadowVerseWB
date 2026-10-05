@@ -1,12 +1,12 @@
 {
-  "retrieved_at": "2026-09-06T11:08:34.739Z",
+  "retrieved_at": "2026-10-05T15:55:41.107Z",
   "language": "ja",
   "official_source_url": "https://shadowverse-wb.com/ja/deck/cardslist/",
   "official_api_url": "https://shadowverse-wb.com/web/CardList/cardList",
   "card_count": 811,
   "unique_card_id_count": 811,
-  "cards_with_styles": 97,
-  "card_style_count": 131,
+  "cards_with_styles": 100,
+  "card_style_count": 134,
   "collection_method": "The official card-list JavaScript calls GET /web/CardList/cardList. This collector follows that endpoint in 30-card pages using offset, preserves sort_card_id_list order, and selects only those listed IDs from card_details.",
   "scope": "Cards returned by the Japanese official card library's default search. Related/generated token details bundled by the API are not added unless their IDs occur in sort_card_id_list.",
   "schema": {

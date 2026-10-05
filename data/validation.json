@@ -1,29 +1,81 @@
 {
-  "retrieved_at": "2026-09-06T11:08:34.739Z",
+  "retrieved_at": "2026-10-05T15:55:41.107Z",
   "cards": 811,
-  "styles": 131,
-  "unnamed_styles": 96,
-  "evolved_base_images": 586,
+  "unique_ids": 811,
+  "styles": 134,
   "added": 0,
   "removed": 0,
-  "changed": [],
-  "images_checked": 1637,
-  "failed_images": [],
-  "errors": [],
-  "reference_links": [
+  "changed": [
     {
-      "name": "万食のアナテマ・ララアンセム",
-      "styles": [
-        "ネオンスプラッシュ・ララアンセム",
-        "ネオンスプラッシュ・ララアンセム"
+      "id": 10974110,
+      "name": "束刃の咎人・カットスロート",
+      "fields": [
+        "コスト",
+        "攻撃",
+        "体力",
+        "効果",
+        "進化後効果"
       ]
     },
     {
-      "name": "災いの言霊・ジンジャー",
-      "styles": [
-        "求道の魔術師・イザベル",
-        "水面の言霊・ジンジャー"
+      "id": 10972310,
+      "name": "屈辱なる放逐",
+      "fields": [
+        "効果"
+      ]
+    },
+    {
+      "id": 10921110,
+      "name": "海域の斥候",
+      "fields": [
+        "体力"
+      ]
+    },
+    {
+      "id": 10922110,
+      "name": "渦潮の砲手",
+      "fields": [
+        "攻撃",
+        "体力"
+      ]
+    },
+    {
+      "id": 10973310,
+      "name": "ハクガ燐斂",
+      "fields": [
+        "コスト"
+      ]
+    },
+    {
+      "id": 10633310,
+      "name": "魔恋の天晶",
+      "fields": [
+        "コスト",
+        "効果"
+      ]
+    },
+    {
+      "id": 10423110,
+      "name": "真王の刃・黄金の騎士",
+      "fields": [
+        "コスト",
+        "効果",
+        "進化後効果"
       ]
     }
-  ]
+  ],
+  "changed_since_20260929": [
+    {
+      "id": 10964110,
+      "name": "神紋の咎人・エルラーデ"
+    },
+    {
+      "id": 10944110,
+      "name": "穿孔の咎人・アンテマリア"
+    }
+  ],
+  "errors": [],
+  "image_validation": "URL structure checked; individual image downloads not performed",
+  "source": "https://shadowverse-wb.com/ja/deck/cardslist/",
+  "comparison_base_commit": "7175ae7989dfca0fe3c8c2bf4cb71ae1b99da404"
 }
