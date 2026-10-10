@@ -1,0 +1,97 @@
+{
+  "title": "Shadowverse Worlds Beyond プロ試合・学習用事例集",
+  "checked_on": "2026-10-10",
+  "window": "2026-08-10〜2026-10-10（日本時間）",
+  "scope": "公式Shadowverse Premier Series 26-27を中心に調査。世界の全大会・全プロ選手の配信を網羅した一覧ではない。",
+  "status": "公式8開催日・24配信を整理。うち3配信の4試合に含まれる一部解説・相談を精読し、9事例を記録。全編視聴は未実施。",
+  "method": "公式日程と配信説明を照合。8月12日本配信・10月7日副音声②はYouTubeの自動文字起こし、9月23日本配信は画面上の文字起こしを読んだ。9月23日と10月7日の映像を一部確認したが、各局面の全手札・全盤面・全合法手は未復元。動画ファイルはダウンロードしていない。",
+  "limitations": [
+    "これは参照資料の蓄積であり、モデルの重みを更新する追加訓練ではない。助言精度の改善を測る評価も未実施。",
+    "全9事例はB評価＝解説またはチーム相談に基づく検討材料。最善手・確定リーサルを証明したA評価の事例はまだない。",
+    "自動文字起こしにはカード名・数値・話者の誤認がある。疑わしい固有名詞や打点は確定情報に採用しない。",
+    "実況解説の推測、選手の相談、こちらの応用案を区別する。観戦者に見える相手手札を選手の既知情報にしない。",
+    "9月29日の調整前後を分ける。当日の全カード仕様・使用40枚の完全照合は未実施。旧対戦のコストやキープを現在のレシピへ直輸入しない。",
+    "10月7日本配信は文字起こし取得ができず、同日副音声②を代わりに確認。その他の副音声はURL整理のみ。"
+  ],
+  "official_sources": [
+    {"label": "公式日程・結果（開催日と配信URL）", "url": "https://ps.shadowverse-wb.com/26-27/schedule-results/"},
+    {"label": "第8節前半・公式デッキリスト", "url": "https://ps.shadowverse-wb.com/26-27/news/346/"},
+    {"label": "第8節後半・公式デッキリスト", "url": "https://ps.shadowverse-wb.com/26-27/news/352/"},
+    {"label": "9月29日カード調整・公式告知", "url": "https://shadowverse-wb.com/ja/news/detail/?id=01M1GEHYM6FH0137A65FTXFWBQ"}
+  ],
+  "broadcasts": [
+    {"date": "2026-08-12", "round": "第4節後半", "matchups": "VARREL対RIDDLE ORDER／ZETA DIVISION対DetonatioN FocusMe", "main": "t5f1hh-W48E", "audio1": "UwfCA9S-3A0", "audio2": "fxa8kiZ1NRw", "review": "本配信のROUND1 BATTLE4を中心に解説精読"},
+    {"date": "2026-08-19", "round": "第5節前半", "matchups": "Crazy Raccoon対MURASH GAMING／REJECT対RIDDLE ORDER", "main": "tFfmk5qJj98", "audio1": "ka1-YF7URP0", "audio2": "wF3kfcCuW1E", "review": "URL確認のみ"},
+    {"date": "2026-08-26", "round": "第5節後半", "matchups": "レバンガ北海道対DetonatioN FocusMe／VARREL対ZETA DIVISION", "main": "ow6Tl2yHGJU", "audio1": "fhagW2mRmHM", "audio2": "ujWrWP5ZJ68", "review": "URL確認のみ"},
+    {"date": "2026-08-30", "round": "第6節", "matchups": "Crazy Raccoon対RIDDLE ORDER／MURASH GAMING対DetonatioN FocusMe／REJECT対ZETA DIVISION／レバンガ北海道対VARREL", "main": "nKiU89zQgfI", "audio1": "Pj0j1aJqP_o", "audio2": "5jfgHgnZfv4", "review": "URL確認のみ"},
+    {"date": "2026-09-02", "round": "第7節前半", "matchups": "Crazy Raccoon対DetonatioN FocusMe／RIDDLE ORDER対ZETA DIVISION", "main": "HSEhi3WrdHk", "audio1": "85jDNjr5ciQ", "audio2": "y2C4MR0g6Ns", "review": "URL確認のみ"},
+    {"date": "2026-09-09", "round": "第7節後半", "matchups": "MURASH GAMING対VARREL／REJECT対レバンガ北海道", "main": "ttsuVkuefo4", "audio1": "pEVtxaOG8uY", "audio2": "ZwxnAAclXL0", "review": "URL確認のみ"},
+    {"date": "2026-09-23", "round": "第8節前半", "matchups": "REJECT対MURASH GAMING／レバンガ北海道対RIDDLE ORDER", "main": "uo6heKYv1lo", "audio1": "nbsY4037WRs", "audio2": "PmjQUqsWjEA", "review": "本配信のROUND1 BATTLE1・2の一部解説精読、映像一部確認"},
+    {"date": "2026-10-07", "round": "第8節後半", "matchups": "VARREL対DetonatioN FocusMe／ZETA DIVISION対Crazy Raccoon", "main": "wBiywbLSWlQ", "audio1": "FvDI1SORa08", "audio2": "1dryDcPRQgw", "review": "副音声②のROUND2 BATTLE5の相談・振り返り精読、映像一部確認"}
+  ],
+  "cases": [
+    {
+      "id": "PRO-20260812-01", "date": "2026-08-12", "video": "t5f1hh-W48E", "start_seconds": 5602, "time": "1:33:22〜1:35:16", "match": "ROUND1 BATTLE4・ウィッチミラー", "evidence": "B／実況解説・自動文字起こし", "topic": "マリガンは勝ち筋への到達から考える",
+      "observed": "解説はドロー源のキープと、ミラーで必要になる主力札へのアクセスを結び付けていた。",
+      "application": "実験ウィッチでも、初手の動き・実験体の強化到達・フィニッシャー確保を分けてキープ理由を説明する。",
+      "caution": "当時の魔手系ミラーの話。現在の実験スペル／秘術で同じカードをキープすべき証拠ではない。"
+    },
+    {
+      "id": "PRO-20260812-02", "date": "2026-08-12", "video": "t5f1hh-W48E", "start_seconds": 5737, "time": "1:35:37〜1:38:53", "match": "ROUND1 BATTLE4・ウィッチミラー", "evidence": "B／実況解説・自動文字起こし", "topic": "ドローと手札整理を一緒に設計する",
+      "observed": "今引くか、必要札や除去を残して待つか、手札が溢れるかを並行して検討していた。",
+      "application": "ドロー前に空き枠・次ターンの使用札・融合候補を数える。余りPPを使うこと自体を目的にしない。",
+      "caution": "常にドローを遅らせるという規則ではない。生存に必要な札を今探す場合は別。"
+    },
+    {
+      "id": "PRO-20260812-03", "date": "2026-08-12", "video": "t5f1hh-W48E", "start_seconds": 6603, "time": "1:50:03〜1:52:30", "match": "ROUND1 BATTLE4・ウィッチミラー", "evidence": "B／実況解説・自動文字起こし", "topic": "ランダム結果を見てから分岐を選べる順序",
+      "observed": "終盤の解説は、ランダムな結果が足りない場合の生存手段を残す順番を評価していた。",
+      "application": "確定打点と上振れ打点を分け、結果が悪い時に回復・処理へ切り替えられる順序を比較する。",
+      "caution": "この試合の正確な打点・PP・確定リーサルは未復元。具体的なコンボ手順としては使わない。"
+    },
+    {
+      "id": "PRO-20260923-01", "date": "2026-09-23", "video": "uo6heKYv1lo", "start_seconds": 1897, "time": "31:37〜32:40", "match": "ROUND1 BATTLE1・ネメシス対ロイヤル", "evidence": "B／実況解説・画面上の自動文字起こし", "topic": "マリガン情報は推定材料に留める",
+      "observed": "解説は交換枚数から相手の初動を推測し、目先の攻撃と必要札を探すドローを比較していた。",
+      "application": "全キープ等を相手の強い初動の候補へ結び付けるが、実際の手札を知っている扱いにはしない。",
+      "caution": "交換枚数だけで特定札の所持や確率を断定しない。観戦画面の手札は選手の情報ではない。"
+    },
+    {
+      "id": "PRO-20260923-02", "date": "2026-09-23", "video": "uo6heKYv1lo", "start_seconds": 2101, "time": "35:01〜37:48／41:35〜42:07", "match": "ROUND1 BATTLE1・ネメシス対ロイヤル", "evidence": "B／実況解説・画面上の自動文字起こし", "topic": "相手の回復・除去枠から攻め方を変える",
+      "observed": "横展開への返し、複製対象、回復の採用枠を踏まえ、顔への圧力と割り切るリスクを論じていた。",
+      "application": "実験体を広げる価値と全体除去を受ける損失を比較する。負けた事実だけで攻めた判断を誤りにしない。",
+      "caution": "公式40枚の個別照合は未完了。回復枚数の説明を他の相手リストへ転用しない。"
+    },
+    {
+      "id": "PRO-20260923-03", "date": "2026-09-23", "video": "uo6heKYv1lo", "start_seconds": 3148, "time": "52:28〜54:39／57:54〜59:29", "match": "ROUND1 BATTLE2・エルフ対ビショップ", "evidence": "B／実況解説・画面上の自動文字起こし", "topic": "遅延ドローまで含めた手札の空き枠",
+      "observed": "ドローを伴わない選択や、カウントダウンで後から引く分の空き枠管理が解説されていた。",
+      "application": "ターン開始・ラストワード等の予定ドローも数え、実験ウィッチの補充札や融合の順番を決める。",
+      "caution": "ビショップ固有の動きをそのままコピーせず、手札上限管理という原則だけを応用する。"
+    },
+    {
+      "id": "PRO-20260923-04", "date": "2026-09-23", "video": "uo6heKYv1lo", "start_seconds": 3858, "time": "1:04:18〜1:06:03", "match": "ROUND1 BATTLE2・エルフ対ビショップ", "evidence": "B／実況解説・画面上の自動文字起こし", "topic": "守護の枚数と実際の生存を区別する",
+      "observed": "守護を効果で越えられる状況では、回復量の重要性が論じられていた。",
+      "application": "研究者の守護で止まる攻撃、効果ダメージ、守護を除去した後の残りPPを分けて生存ラインを計算する。",
+      "caution": "回復が常に守護より優先ではない。相手の実際のデッキと公開情報に基づき再計算する。"
+    },
+    {
+      "id": "PRO-20261007-01", "date": "2026-10-07", "video": "1dryDcPRQgw", "start_seconds": 14311, "time": "3:58:31〜3:59:18／4:07:08〜4:07:38", "match": "ROUND2 BATTLE5・ロイヤル対ドラゴン", "evidence": "B／副音声②・チーム相談の自動文字起こし", "topic": "公開済み情報の台帳を更新する",
+      "observed": "チームは相手のマリガン交換枚数を確認し、後半には使用済みカードを数えていた。",
+      "application": "助言前に公開済みの除去・回復・フィニッシャー枚数を記録し、残りの候補を更新する。",
+      "caution": "話者個人は特定していない。文字起こしのカード名・正確な残枚数は未確定で、数値モデルの教師データにはしない。"
+    },
+    {
+      "id": "PRO-20261007-02", "date": "2026-10-07", "video": "1dryDcPRQgw", "start_seconds": 15007, "time": "4:10:07〜4:10:56／4:12:08〜4:14:46", "match": "ROUND2 BATTLE5・ロイヤル対ドラゴン", "evidence": "B／副音声②・チーム相談の自動文字起こし、映像一部確認", "topic": "受け続ける将来と攻めるリスクを比較する",
+      "observed": "攻めへ転じるかの相談と、受け続けても相手に主導権を渡すという振り返りがあった。",
+      "application": "今ターンの安全だけでなく、次の1〜2ターンで自分の勝ち筋が残るかを比較する。危険な攻めも選択肢から自動除外しない。",
+      "caution": "攻めが最善だったと証明したわけではない。対戦結果だけで成功・失敗の判断規則を作らない。"
+    }
+  ],
+  "future_review_checklist": [
+    "初手・先後・当日のレシピとカード仕様を確定する。プロ事例との一致点と相違点を示す。",
+    "プレイヤーが知り得た公開情報だけで相手の応手候補を作る。非公開手札は複数仮説にする。",
+    "手札上限、場の枠、PP、進化権、実験体累計、クレスト、ランダム対象を数えてから手順を評価する。",
+    "攻め／処理／回復について今ターンと次の1〜2ターンを比較し、確定値と不確定値を分ける。",
+    "B事例は検討の観点に使い、そのまま正解ラベルにしない。全盤面と合法手を照合した時だけAへ昇格する。",
+    "精度の検証は未見のリプレイで、相手の実際の手札・次の行動を隠して行う。結果を見る前に候補と根拠を記録する。"
+  ],
+  "remaining": "8月19日・26日・30日・9月2日・9日は内容未解析。副音声は10月7日②以外未解析。確認済み4試合も全局面の復元は未完了。地域大会・国際大会の映像網羅、40枚照合、現行実験ウィッチへの具体手順検証、未見対戦での精度評価は未実施。"
+}

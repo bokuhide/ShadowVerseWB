@@ -43,3 +43,9 @@ node scripts/validate_cards.mjs
 `card_id` 件数が一致しなければエラー終了します。
 
 公式ソース: https://shadowverse-wb.com/ja/deck/cardslist/
+
+## クラウド用の参照資料
+
+`data/official-card-pool` ブランチに、作業ルール・3デッキの現行レシピ・公開プロ試合の目録と9事例を保存しています。入口は [クラウド作業ガイド](docs/cloud/README.md) と [公開用引き継ぎ](knowledge/handoff.md) です。`node scripts/validate_learning.mjs` でカード照合・40枚・事例整合を検証できます。
+
+これは参照資料の蓄積であり、モデルの重みの追加訓練ではありません。個人録画・戦績・非公開シートの情報は含めません。クラウド実行の可否は、別途実測して判断してください。

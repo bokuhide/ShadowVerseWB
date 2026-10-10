@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "prepared_on": "2026-10-10",
+  "source": "ユーザー提示レシピ画像と確認済み引き継ぎから転記。個人戦績・画像・シートURLは含めない。",
+  "card_database": "data/cards.json",
+  "notes": ["採用枚数の版と能力調整の版を区別する", "候補IDは代替候補であり、それぞれの枚数ではない"],
+  "decks": [
+    {
+      "name": "実験スペルウィッチ", "as_of": "2026-10-03", "image_deck_name": "侵略実験",
+      "cards": [
+        {"name":"ストームブラスト","count":3,"card_id_candidates":[10131320,10831310]},
+        {"name":"過剰反応","count":2,"card_id":10931310},
+        {"name":"空の命運を握る少女・ルリア","count":1,"card_id":10403120},
+        {"name":"相承の意思","count":3,"card_id":10803310},
+        {"name":"没入の実験体","count":3,"card_id":10931110},
+        {"name":"侵略されし世界","count":2,"card_id":10602210},
+        {"name":"マナリアスクリプター・ティコ","count":3,"card_id":10833110},
+        {"name":"人らしい愛","count":3,"card_id":10932310},
+        {"name":"鋼鉄の微睡み","count":3,"card_id":10833310},
+        {"name":"心酔の研究者","count":3,"card_id":10932110},
+        {"name":"恍惚の才媛","count":3,"card_id":10933110},
+        {"name":"烏ノ涅","count":3,"card_id":10933310},
+        {"name":"恩愛の大地・テトラ＆ラティカ","count":3,"card_id":10834110},
+        {"name":"万術の咎人・セフィー","count":3,"card_id":10934110},
+        {"name":"ルーン・リチュオル","count":2,"card_id":10431310}
+      ]
+    },
+    {
+      "name": "実験秘術ウィッチ", "as_of": "2026-10-02",
+      "cards": [
+        {"name":"旅の幕間","base_name":"魔女の錬金釜","count":3,"card_id":10031210},
+        {"name":"空の命運を握る少女・ルリア","count":2,"card_id":10403120},
+        {"name":"相承の意思","count":3,"card_id":10803310},
+        {"name":"没入の実験体","count":3,"card_id":10931110},
+        {"name":"アルケミック・フレア","count":3,"card_id":10433310},
+        {"name":"マナリアスクリプター・ティコ","count":3,"card_id":10833110},
+        {"name":"人らしい愛","count":3,"card_id":10932310},
+        {"name":"心酔の研究者","count":3,"card_id":10932110},
+        {"name":"退廃の涙","count":1,"card_id":10701310},
+        {"name":"スウィートエンティティ","count":3,"card_id":10733110},
+        {"name":"恍惚の才媛","count":3,"card_id":10933110},
+        {"name":"烏ノ涅","count":3,"card_id":10933310},
+        {"name":"地を這う雷撃","count":1,"card_id":10832320},
+        {"name":"恩愛の大地・テトラ＆ラティカ","count":3,"card_id":10834110},
+        {"name":"万術の咎人・セフィー","count":3,"card_id":10934110}
+      ]
+    },
+    {
+      "name": "魔手ウィッチ", "as_of": "2026-09-16",
+      "cards": [
+        {"name":"大遊戯世界","count":3,"card_id":10503210},
+        {"name":"天晶の魔手","count":2,"card_id":10631110},
+        {"name":"知恵の輝き","count":3,"card_id":10031310},
+        {"name":"正常の侵食","count":2,"card_id":10632310},
+        {"name":"ストームブラスト","count":3,"card_id_candidates":[10131320,10831310]},
+        {"name":"相承の意思","count":3,"card_id":10803310},
+        {"name":"明越花の転変","count":1,"card_id":10531310},
+        {"name":"天晶授与","count":3,"card_id":10631310},
+        {"name":"魔恋の慕情・シイム","count":3,"card_id":10634110},
+        {"name":"マナリアスクリプター・ティコ","count":3,"card_id":10833110},
+        {"name":"魔恋の天晶","count":3,"card_id":10633310},
+        {"name":"鋼鉄の微睡み","count":3,"card_id":10833310},
+        {"name":"ハッピーフラワー・サミー＆マリー","count":2,"card_id":10832110},
+        {"name":"恩愛の大地・テトラ＆ラティカ","count":1,"card_id":10834110},
+        {"name":"明越花・アラ","count":2,"card_id":10534120},
+        {"name":"旧き天晶・カルギデンスラ","count":3,"card_id":10634120}
+      ]
+    }
+  ]
+}
