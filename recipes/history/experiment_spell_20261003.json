@@ -1,0 +1,20 @@
+{
+  "name": "実験スペルウィッチ", "as_of": "2026-10-03", "image_deck_name": "侵略実験",
+  "cards": [
+    {"name":"ストームブラスト","count":3,"card_id_candidates":[10131320,10831310]},
+    {"name":"過剰反応","count":2,"card_id":10931310},
+    {"name":"空の命運を握る少女・ルリア","count":1,"card_id":10403120},
+    {"name":"相承の意思","count":3,"card_id":10803310},
+    {"name":"没入の実験体","count":3,"card_id":10931110},
+    {"name":"侵略されし世界","count":2,"card_id":10602210},
+    {"name":"マナリアスクリプター・ティコ","count":3,"card_id":10833110},
+    {"name":"人らしい愛","count":3,"card_id":10932310},
+    {"name":"鋼鉄の微睡み","count":3,"card_id":10833310},
+    {"name":"心酔の研究者","count":3,"card_id":10932110},
+    {"name":"恍惚の才媛","count":3,"card_id":10933110},
+    {"name":"烏ノ涅","count":3,"card_id":10933310},
+    {"name":"恩愛の大地・テトラ＆ラティカ","count":3,"card_id":10834110},
+    {"name":"万術の咎人・セフィー","count":3,"card_id":10934110},
+    {"name":"ルーン・リチュオル","count":2,"card_id":10431310}
+  ]
+}
