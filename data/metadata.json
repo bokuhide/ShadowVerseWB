@@ -1,14 +1,14 @@
 {
-  "retrieved_at": "2026-10-05T15:55:41.107Z",
+  "retrieved_at": "2026-10-27T17:22:23.960Z",
   "language": "ja",
   "official_source_url": "https://shadowverse-wb.com/ja/deck/cardslist/",
   "official_api_url": "https://shadowverse-wb.com/web/CardList/cardList",
-  "card_count": 811,
-  "unique_card_id_count": 811,
-  "cards_with_styles": 100,
-  "card_style_count": 134,
-  "collection_method": "The official card-list JavaScript calls GET /web/CardList/cardList. This collector follows that endpoint in 30-card pages using offset, preserves sort_card_id_list order, and selects only those listed IDs from card_details.",
-  "scope": "Cards returned by the Japanese official card library's default search. Related/generated token details bundled by the API are not added unless their IDs occur in sort_card_id_list.",
+  "card_count": 887,
+  "unique_card_id_count": 887,
+  "cards_with_styles": 109,
+  "card_style_count": 145,
+  "collection_method": "Python standard library; GET /web/CardList/cardList in 30-card offset pages. Only sort_card_id_list IDs are normalized; related tokens and styles are not counted as separate cards. Rotation flags are cross-checked against all battle_format=1 pages.",
+  "scope": "All cards in the Japanese official default search, including historical sets. is_include_rotation describes the portal snapshot, not a separately verified release or maintenance effective date.",
   "schema": {
     "card_id": "integer; official unique card ID",
     "カード名": "string",
@@ -36,6 +36,371 @@
     "card_styles[].evolved_image_url": "string or null; official evolved image URL",
     "card_styles[].effect_override": "string or null; style-specific effect text when supplied",
     "card_styles[].effective_effect": "string; style override or inherited base-card effect",
-    "card_styles[].uses_base_effect": "boolean"
-  }
+    "card_styles[].uses_base_effect": "boolean",
+    "is_include_rotation": "boolean; common.is_include_rotation from official API, cross-checked against battle_format=1; snapshot availability flag, not a release-date guarantee"
+  },
+  "processed_at": "2026-10-27T17:22:37.495Z",
+  "rotation_card_count": 516,
+  "non_rotation_card_count": 371,
+  "card_sets": [
+    {
+      "card_set_id": 10000,
+      "card_set": "ベーシック",
+      "card_count": 56,
+      "rotation_card_count": 56
+    },
+    {
+      "card_set_id": 10001,
+      "card_set": "伝説の幕開け",
+      "card_count": 142,
+      "rotation_card_count": 1
+    },
+    {
+      "card_set_id": 10002,
+      "card_set": "インフィニティ・エボルヴ",
+      "card_count": 77,
+      "rotation_card_count": 0
+    },
+    {
+      "card_set_id": 10003,
+      "card_set": "絶傑の継承者",
+      "card_count": 77,
+      "rotation_card_count": 0
+    },
+    {
+      "card_set_id": 10004,
+      "card_set": "蒼空の六竜",
+      "card_count": 76,
+      "rotation_card_count": 0
+    },
+    {
+      "card_set_id": 10005,
+      "card_set": "花酔遊戯",
+      "card_count": 76,
+      "rotation_card_count": 76
+    },
+    {
+      "card_set_id": 10006,
+      "card_set": "アポカリプス・パクト",
+      "card_count": 76,
+      "rotation_card_count": 76
+    },
+    {
+      "card_set_id": 10007,
+      "card_set": "神殺し・アナテマ",
+      "card_count": 77,
+      "rotation_card_count": 77
+    },
+    {
+      "card_set_id": 10008,
+      "card_set": "クロニクル・オブ・デスティニー",
+      "card_count": 78,
+      "rotation_card_count": 78
+    },
+    {
+      "card_set_id": 10009,
+      "card_set": "アズヴォルト・レヴナント",
+      "card_count": 76,
+      "rotation_card_count": 76
+    },
+    {
+      "card_set_id": 10010,
+      "card_set": "ニーゲルヘリア神殺事件",
+      "card_count": 76,
+      "rotation_card_count": 76
+    }
+  ],
+  "source_pages": [
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=0",
+      "listed_count": 30,
+      "sha256": "cae567a3b7bb7faa0c4b92fd779a35777f02e94c5263220fc1759bea1243e57f",
+      "retrieved_at": "2026-10-27T17:18:30.053Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=30",
+      "listed_count": 30,
+      "sha256": "785dff4a90192b7dfbca2d8e02ce9069740ced331c0496dbf20951e24c860150",
+      "retrieved_at": "2026-10-27T17:19:08.360Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=60",
+      "listed_count": 30,
+      "sha256": "2d9786ce81231a770de20e29a9ba51e85c1404bbabce64979ba46f1948eed8d4",
+      "retrieved_at": "2026-10-27T17:19:08.346Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=90",
+      "listed_count": 30,
+      "sha256": "d08b46ac0fe59b71c82a32ae68d9c9921297adc69f2f98b6d5ae73f8b1d05ebe",
+      "retrieved_at": "2026-10-27T17:19:08.216Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=120",
+      "listed_count": 30,
+      "sha256": "f86c3781485ed028728c78e834ae8ed70afbb892f879e640accdd353561d9ccb",
+      "retrieved_at": "2026-10-27T17:19:12.776Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=150",
+      "listed_count": 30,
+      "sha256": "06c7f9c8edd0325d89a2f6a635dd3d8dd0ac62d49a0a651361847a6d366aacf2",
+      "retrieved_at": "2026-10-27T17:19:12.635Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=180",
+      "listed_count": 30,
+      "sha256": "16b1d2a6b698b9f5a44fa7e1d4ac6ec7e7619f88c34bc28a2a41795f200eb8a0",
+      "retrieved_at": "2026-10-27T17:19:12.623Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=210",
+      "listed_count": 30,
+      "sha256": "80989b7717488703d8bc89454c12746c08e33131d64e25cb271f5f55239cc1a2",
+      "retrieved_at": "2026-10-27T17:19:17.092Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=240",
+      "listed_count": 30,
+      "sha256": "df158875037245b7754dc3ca2731d5ea653314265dc75ccd7a97f597e661bf49",
+      "retrieved_at": "2026-10-27T17:19:16.818Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=270",
+      "listed_count": 30,
+      "sha256": "5ed22279308cf27aeb47485f581d3d3f590a75c34b41a28c11f5b61a89fc3413",
+      "retrieved_at": "2026-10-27T17:19:17.094Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=300",
+      "listed_count": 30,
+      "sha256": "817a4b2e2d7a9fc9a83ebeeee9172deca0178c3db6a600edf76e36c15473ccb1",
+      "retrieved_at": "2026-10-27T17:19:24.416Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=330",
+      "listed_count": 30,
+      "sha256": "c44364593bfdedf6b60cb09c11e2b017669e596bbff055c55ecc4fb052555436",
+      "retrieved_at": "2026-10-27T17:19:24.420Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=360",
+      "listed_count": 30,
+      "sha256": "a0ad61b777b128a1907e543c6d4159c6c64151f7cc773aeef078fc223260c526",
+      "retrieved_at": "2026-10-27T17:19:24.385Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=390",
+      "listed_count": 30,
+      "sha256": "4eed148506c4474312023bbcd1350aec8f70c0023b4ae5e7fc5e18514288045e",
+      "retrieved_at": "2026-10-27T17:19:31.429Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=420",
+      "listed_count": 30,
+      "sha256": "6e527e02092dff0376a65a88bd76d0ee45e65504ae7c2347e97062185e9817c3",
+      "retrieved_at": "2026-10-27T17:19:31.676Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=450",
+      "listed_count": 30,
+      "sha256": "672d1faca2a195a927f41f683334712ae9c3a17d4d90ce77f5a58060565a713a",
+      "retrieved_at": "2026-10-27T17:19:31.897Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=480",
+      "listed_count": 30,
+      "sha256": "f4a11bb38abba994ec4908f4bc1e9722e9fc09cafd3013f02a834b1a44322213",
+      "retrieved_at": "2026-10-27T17:19:38.905Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=510",
+      "listed_count": 30,
+      "sha256": "c58cc05d3374d6d688812a0e310acb5f2d0af2ab3da7f3e2ce328f25f749b118",
+      "retrieved_at": "2026-10-27T17:19:38.962Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=540",
+      "listed_count": 30,
+      "sha256": "422e4cca7a9d6e05cbbb4513e667d801a114dfc04541f89f13c583206f39510a",
+      "retrieved_at": "2026-10-27T17:19:38.839Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=570",
+      "listed_count": 30,
+      "sha256": "2b0fbf7e5f671ec1094ce596caa211390d06520b35a2b9d0a09b0db818edf9ba",
+      "retrieved_at": "2026-10-27T17:19:46.439Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=600",
+      "listed_count": 30,
+      "sha256": "df0d59bdee977ae71b962dd392cf907f6df68ce1d9a1393c3fc3b9776994b819",
+      "retrieved_at": "2026-10-27T17:19:46.450Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=630",
+      "listed_count": 30,
+      "sha256": "2057d5280a281b65486de7415defb62171f3cb1055b6b213e812eccecab63157",
+      "retrieved_at": "2026-10-27T17:19:46.589Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=660",
+      "listed_count": 30,
+      "sha256": "35d9d77c0ab7e51981b6f91ef21df11f575b29259d7dee2aeaee04b0d5e1e0d3",
+      "retrieved_at": "2026-10-27T17:19:53.993Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=690",
+      "listed_count": 30,
+      "sha256": "e6d022bc5c1f2e190cfb2c8d43f1e39349eab616686b7c2990751c80b5aa81d6",
+      "retrieved_at": "2026-10-27T17:19:53.747Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=720",
+      "listed_count": 30,
+      "sha256": "5fc93742913dcfb9cec0e6912903c0872a2287d6d7f501785b3da668304f2c96",
+      "retrieved_at": "2026-10-27T17:19:53.773Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=750",
+      "listed_count": 30,
+      "sha256": "7a23cffa63378adc895987de1b8799bde2aa2ded1f6fedd962780c65f0ea2c14",
+      "retrieved_at": "2026-10-27T17:20:01.178Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=780",
+      "listed_count": 30,
+      "sha256": "3f375a1d205d77181bcfc1b976cc391ef43271276806f977b385ecb4f6d1ba44",
+      "retrieved_at": "2026-10-27T17:20:01.177Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=810",
+      "listed_count": 30,
+      "sha256": "3e0e948a2730ffff92fdeea78e74e1258163db303ae68f42f68e945f759cc1c3",
+      "retrieved_at": "2026-10-27T17:20:01.259Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=840",
+      "listed_count": 30,
+      "sha256": "6682d99322ead9837826dbf3edf7e2f1ef081d9f9424daa06cc0da772e34c166",
+      "retrieved_at": "2026-10-27T17:20:08.730Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=870",
+      "listed_count": 17,
+      "sha256": "8ff4c9ff2837bd612642faa255d0ded150225b3044cacf59028e49c12f1d0e65",
+      "retrieved_at": "2026-10-27T17:20:08.350Z"
+    }
+  ],
+  "rotation_source_pages": [
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=0&battle_format=1",
+      "listed_count": 30,
+      "sha256": "b018a1437c58b0ab14169f90a1a1f5e16211096e57f0435cb9579c15fb437eb9",
+      "retrieved_at": "2026-10-27T17:19:37.701Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=30&battle_format=1",
+      "listed_count": 30,
+      "sha256": "645fb8b7fba571f13c382fc71b15b852acaaef0279f0c296021d638a29202ec3",
+      "retrieved_at": "2026-10-27T17:20:26.647Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=60&battle_format=1",
+      "listed_count": 30,
+      "sha256": "63ed7cab6f58b43a1964b67b70cab5a360345acfa48d2e2240c261aabb27f3e3",
+      "retrieved_at": "2026-10-27T17:20:33.791Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=90&battle_format=1",
+      "listed_count": 30,
+      "sha256": "c94a01bb51fa685e554723a1379915dd069713595ee7abd8166cfea0cc11cd9f",
+      "retrieved_at": "2026-10-27T17:20:41.157Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=120&battle_format=1",
+      "listed_count": 30,
+      "sha256": "5898123afc7d9d49b4dd2edc8c18b9b2019ebc8e39a2656377ef0c53ba17dd79",
+      "retrieved_at": "2026-10-27T17:20:48.505Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=150&battle_format=1",
+      "listed_count": 30,
+      "sha256": "494430a760eedb8d5c00d8f1a9f3360a04ff6a5e074db4e9a4f0ed2ba9a1d0c4",
+      "retrieved_at": "2026-10-27T17:20:56.329Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=180&battle_format=1",
+      "listed_count": 30,
+      "sha256": "814421cf9fcb7cd967d64dfd00d72ffde0d7488ecd4401e6208f1d431409af4e",
+      "retrieved_at": "2026-10-27T17:21:03.463Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=210&battle_format=1",
+      "listed_count": 30,
+      "sha256": "353d54d6b6d1c1dac2d9396889536bd0c1e6a47e3373222f911c8e45ddc70ae6",
+      "retrieved_at": "2026-10-27T17:21:10.925Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=240&battle_format=1",
+      "listed_count": 30,
+      "sha256": "e4a885df6f97deb00453e3a8074cdf1989fa175d779afa7f0b60978b5a05dc7e",
+      "retrieved_at": "2026-10-27T17:21:17.960Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=270&battle_format=1",
+      "listed_count": 30,
+      "sha256": "b706c04b45c449c8c97649f58b1eaacee1fdd13e7d2b118e12eb23facb3fb694",
+      "retrieved_at": "2026-10-27T17:21:25.659Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=300&battle_format=1",
+      "listed_count": 30,
+      "sha256": "392e08546e074d4a85549b22d6ec762ddc2f9cbe61e243ac7d3bee2f3b5d7f18",
+      "retrieved_at": "2026-10-27T17:21:31.892Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=330&battle_format=1",
+      "listed_count": 30,
+      "sha256": "b651cf5c2d1ed356d0c62e849bb13adfaa1a42ecbcd8b9780adc3668fe1ec808",
+      "retrieved_at": "2026-10-27T17:21:40.332Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=360&battle_format=1",
+      "listed_count": 30,
+      "sha256": "14cd8da4e7635fca31a1414c06fb7d6ab0657d1ea4bb1cebe3bf97f79113463f",
+      "retrieved_at": "2026-10-27T17:21:47.736Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=390&battle_format=1",
+      "listed_count": 30,
+      "sha256": "1e9e1859c350213a08a47abdda89fed6a300a585b1791ab1dd6393d5bcccacc1",
+      "retrieved_at": "2026-10-27T17:21:55.153Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=420&battle_format=1",
+      "listed_count": 30,
+      "sha256": "5614141875b20fc516c650ca72f143bcf34405a24d81728d4fa35d0f3a6b0815",
+      "retrieved_at": "2026-10-27T17:22:02.747Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=450&battle_format=1",
+      "listed_count": 30,
+      "sha256": "273672b00bee19b9d24f8ca958c58e934ee924b35b14e32749fd8cb166520dde",
+      "retrieved_at": "2026-10-27T17:22:09.828Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=480&battle_format=1",
+      "listed_count": 30,
+      "sha256": "80811b9c3f17b8db4e223c3fec674a53746975023c9559a76c071de2536f1fca",
+      "retrieved_at": "2026-10-27T17:22:17.062Z"
+    },
+    {
+      "url": "https://shadowverse-wb.com/web/CardList/cardList?offset=510&battle_format=1",
+      "listed_count": 6,
+      "sha256": "b27ff333489e8f30895d32812978ce29742b3e279e644bd0da738cc75915defb",
+      "retrieved_at": "2026-10-27T17:22:23.960Z"
+    }
+  ],
+  "processing_started_at": "2026-10-27T17:22:37.443Z"
 }

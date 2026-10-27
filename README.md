@@ -6,6 +6,8 @@
 
 - `data/cards.json`: 公式カード一覧のカード。`card_id` で一意です。
 - `data/metadata.json`: 取得日時、公式URL、件数、取得方法、スキーマ。
+- `data/rotation.json`: 公式ローテーション検索に掲載されたカードID一覧。
+- `scripts/collect_cards.py`: Python標準ライブラリで再取得し、全ページのローテーション検索結果と照合。
 - `scripts/collect_cards.ps1`: 公式APIから再取得するPowerShellスクリプト。
 - `scripts/validate_cards.mjs`: Node.jsで件数・重複・必須項目・画像URLの応答を検証。
 - `data/validation.json`: 最新の検証結果（差分は検証時のローカルHEADとの比較）。
@@ -21,7 +23,27 @@
 `evolved_image_hash` / `evolved_image_url` を保存し、録画の絵柄照合に利用できます。
 画像ファイル本体は保存しません。通常一覧外の生成トークンは、このデータの対象外です。
 
+各カードの `is_include_rotation` は公式APIの同名フラグです。過去弾も削除せず残し、
+ローテーションのデッキ検討ではこの値が `true` のカードを使用します。弾番号だけで
+判定せず、再録等の例外も公式のカード単位の結果に従います。このフラグは取得時の
+デッキポータルの表示状態であり、新弾のゲーム内実装日時まで確認した値ではありません。
+過去の対戦・保存レシピへ最新能力や最新フォーマットを遡及適用しないでください。
+
 ## 再取得
+
+クラウド等でPython 3を利用できる場合、追加ライブラリなしで実行できます。
+ローテーション検索 `battle_format=1` も全ページ取得し、カードごとのフラグと照合します。
+
+```console
+python3 scripts/collect_cards.py
+node scripts/validate_cards.mjs --image-sample=20
+node scripts/validate_learning.mjs
+```
+
+`--image-sample=20` は画像URLのうち20件を通信確認します。省略時は全画像URLを確認します。
+全画像の確認とサンプル確認を区別し、結果は `data/validation.json` に記録します。
+Python版の `--cache-directory` は生応答を再処理するための任意オプションです。
+新規取得時は新しい空のディレクトリを指定し、過去のキャッシュを最新取得と扱わないでください。
 
 追加ライブラリは不要です。PowerShell 7以降で、リポジトリのルートから実行してください。
 

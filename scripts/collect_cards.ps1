@@ -64,6 +64,7 @@ for ($offset = 0; $offset -lt $expectedCount; $offset += $PageSize) {
         $detail = $data.card_details.PSObject.Properties[[string]$cardId].Value
         if ($null -eq $detail) { throw "Missing detail for listed card_id=$cardId" }
         $common = $detail.common
+        if ($common.is_include_rotation -isnot [bool]) { throw "Missing official rotation flag for card_id=$cardId" }
         $typeId = [int]$common.type
         if (-not $TypeNames.ContainsKey([string]$typeId)) { throw "Unexpected type=$typeId for card_id=$cardId" }
         $isFollower = $typeId -eq 1
@@ -117,6 +118,7 @@ for ($offset = 0; $offset -lt $expectedCount; $offset += $PageSize) {
             # Materialize the generic list so ConvertTo-Json always emits an array,
             # including when a card has exactly one style.
             card_styles = $cardStyles.ToArray()
+            is_include_rotation = [bool]$common.is_include_rotation
         })
     }
 }
@@ -134,6 +136,8 @@ $metadata = [ordered]@{
     unique_card_id_count = $seen.Count
     cards_with_styles = ($cards | Where-Object { $_.card_styles.Count -gt 0 }).Count
     card_style_count = [int](($cards | ForEach-Object { $_.card_styles.Count } | Measure-Object -Sum).Sum)
+    rotation_card_count = @($cards | Where-Object { $_.is_include_rotation }).Count
+    non_rotation_card_count = @($cards | Where-Object { -not $_.is_include_rotation }).Count
     collection_method = "The official card-list JavaScript calls GET /web/CardList/cardList. This collector follows that endpoint in 30-card pages using offset, preserves sort_card_id_list order, and selects only those listed IDs from card_details."
     scope = "Cards returned by the Japanese official card library's default search. Related/generated token details bundled by the API are not added unless their IDs occur in sort_card_id_list."
     schema = [ordered]@{
@@ -164,6 +168,7 @@ $metadata = [ordered]@{
         "card_styles[].effect_override" = "string or null; style-specific effect text when supplied"
         "card_styles[].effective_effect" = "string; style override or inherited base-card effect"
         "card_styles[].uses_base_effect" = "boolean"
+        is_include_rotation = "boolean; official common.is_include_rotation snapshot flag, not a release-date guarantee"
     }
 }
 
@@ -173,4 +178,13 @@ $cardsJson = $cards | ConvertTo-Json -Depth 10
 $metadataJson = $metadata | ConvertTo-Json -Depth 10
 [System.IO.File]::WriteAllText((Join-Path $OutputDirectory "cards.json"), $cardsJson + "`n", $utf8NoBom)
 [System.IO.File]::WriteAllText((Join-Path $OutputDirectory "metadata.json"), $metadataJson + "`n", $utf8NoBom)
+$rotation = [ordered]@{
+    retrieved_at = $metadata.retrieved_at
+    official_source_url = "$SourcePage`?battle_format=1"
+    official_api_url = "$ApiUrl`?battle_format=1"
+    card_count = $metadata.rotation_card_count
+    card_ids = @($cards | Where-Object { $_.is_include_rotation } | ForEach-Object { $_.card_id })
+    scope = "Official per-card rotation flags at retrieval. This PowerShell path does not independently cross-check battle_format=1 pages; use collect_cards.py for that check."
+}
+[System.IO.File]::WriteAllText((Join-Path $OutputDirectory "rotation.json"), ($rotation | ConvertTo-Json -Depth 10) + "`n", $utf8NoBom)
 Write-Output "Wrote $($cards.Count) unique cards to $(Join-Path $OutputDirectory 'cards.json')"
